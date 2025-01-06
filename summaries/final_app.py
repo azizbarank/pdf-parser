@@ -12,6 +12,11 @@ from langchain_core.prompts.chat import (
 )
 import os
 
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 # Streamlit App Configuration
 st.set_page_config(page_title="PDF Query Assistant", layout="centered")
 st.title("Langchain PDF Query Assistant")
