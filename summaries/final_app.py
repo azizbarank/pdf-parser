@@ -12,10 +12,10 @@ from langchain_core.prompts.chat import (
 )
 import os
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
-load_dotenv()
+load_dotenv(find_dotenv())
 
 # Streamlit App Configuration
 st.set_page_config(page_title="PDF Query Assistant", layout="centered")
