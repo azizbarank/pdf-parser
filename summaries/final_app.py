@@ -23,12 +23,13 @@ st.title("Langchain PDF Query Assistant")
 
 # User Input: API Key
 openai_api_key = st.text_input("Enter your OpenAI API key:", type="password")
-if openai_api_key:
-    # Set the OpenAI API key for the session
-    os.environ["OPENAI_API_KEY"] = openai_api_key
-
-# Initialize embeddings (based on user input API key)
-embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
+if not openai_api_key:
+    st.warning("Please enter your OpenAI API key to proceed.")
+else:
+    os.environ["OPENAI_API_KEY"] = (
+        openai_api_key  # Set API key in environment (redundancy)
+    )
+    embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)  # Explicit passing
 
 
 def create_db_from_pdf(pdf_path):
