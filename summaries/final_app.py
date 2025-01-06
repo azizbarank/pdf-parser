@@ -23,7 +23,7 @@ if openai_api_key:
     os.environ["OPENAI_API_KEY"] = openai_api_key
 
 # Initialize embeddings (based on user input API key)
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 
 def create_db_from_pdf(pdf_path):
