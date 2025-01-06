@@ -5,3 +5,4 @@ tiktoken
 faiss-cpu
 streamlit
 PyMuPDF
+langchain_community
