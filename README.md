@@ -26,7 +26,6 @@ By selling LangChain-based applications as a service to businesses, you can prov
 - [Python 3.6 or higher](https://www.python.org/downloads/)
 - [LangChain library](https://python.langchain.com/en/latest/index.html)
 - [OpenAI API key](https://platform.openai.com/)
-- [SerpAPI API Key](https://serpapi.com/)
 
 ## OpenAI API Models
 The OpenAI API is powered by a diverse set of [models](https://platform.openai.com/docs/models) with different capabilities and price points. You can also make limited customizations to our original base models for your specific use case with fine-tuning.
@@ -84,11 +83,4 @@ api_key = os.environ['OPENAI_API_KEY']
 ```
 
 Now your Python environment is set up, and you can proceed with running the experiments.
-
-## Datalumina
-
-This document is provided to you by Datalumina. We help data analysts, engineers, and scientists launch and scale a successful freelance business — $100k+ /year, fun projects, happy clients. If you want to learn more about what we do, you can visit our [website](https://www.datalumina.io/) and subscribe to our [newsletter](https://www.datalumina.io/newsletter). Feel free to share this document with your data friends and colleagues.
-
-## Tutorials
-For video tutorials on how to use the LangChain library and run experiments, visit the YouTube channel: [youtube.com/@daveebbelaar](https://youtube.com/@daveebbelaar)
 
